@@ -10,16 +10,17 @@ public class MyDate {
     private int day;
     private int month;
     private int year;
-    private Weekday weekday = calculateWeekday();
+    private Weekday weekday;
 
 
     public MyDate(String dateString) {
 
         if (isValidDate(dateString)) {
 
-            this.day = Integer.valueOf(dateString.split("\\.")[0]);
-            this.month = Integer.valueOf(dateString.split("\\.")[1]);
-            this.year = Integer.valueOf(dateString.split("\\.")[2]);
+            day = Integer.valueOf(dateString.split("\\.")[0]);
+            month = Integer.valueOf(dateString.split("\\.")[1]);
+            year = Integer.valueOf(dateString.split("\\.")[2]);
+            weekday = calculateWeekday();
 
         }
 
@@ -27,9 +28,9 @@ public class MyDate {
 
     private boolean isValidDate(String dateString) {
 
-        boolean isValidDate = false;
+        boolean isValidDate;
 
-        if (dateString.split("\\.").length != 3) {
+        if (dateString.split("\\.").length == 3) {
 
             int day = Integer.valueOf(dateString.split("\\.")[0]);
             int month = Integer.valueOf(dateString.split("\\.")[1]);
@@ -42,34 +43,36 @@ public class MyDate {
 
             if (isValidDate) {
 
-                if (month == 1 && day >= 31) {
+                if (month == 1 && day > 31) {
                     isValidDate = false;
-                } else if ((month == 2 && day >= 28 && !isLeapYear()) || (month == 2 && day >= 29)) {
+                } else if ((month == 2 && day > 28 && !isLeapYear()) || (month == 2 && day > 29)) {
                     isValidDate = false;
-                } else if (month == 3 && day >= 31) {
+                } else if (month == 3 && day > 31) {
                     isValidDate = false;
-                } else if (month == 4 && day >= 30) {
+                } else if (month == 4 && day > 30) {
                     isValidDate = false;
-                } else if (month == 5 && day >= 31) {
+                } else if (month == 5 && day > 31) {
                     isValidDate = false;
-                } else if (month == 6 && day >= 30) {
+                } else if (month == 6 && day > 30) {
                     isValidDate = false;
-                } else if (month == 7 && day >= 31) {
+                } else if (month == 7 && day > 31) {
                     isValidDate = false;
-                } else if (month == 8 && day >= 31) {
+                } else if (month == 8 && day > 31) {
                     isValidDate = false;
-                } else if (month == 9 && day >= 30) {
+                } else if (month == 9 && day > 30) {
                     isValidDate = false;
-                } else if (month == 10 && day >= 31) {
+                } else if (month == 10 && day > 31) {
                     isValidDate = false;
-                } else if (month == 11 && day >= 30) {
+                } else if (month == 11 && day > 30) {
                     isValidDate = false;
-                } else if (month == 12 && day >= 31) {
+                } else if (month == 12 && day > 31) {
                     isValidDate = false;
                 }
 
             }
 
+        } else {
+            isValidDate = false;
         }
 
         return isValidDate;
@@ -129,7 +132,7 @@ public class MyDate {
 
         }
 
-        formatedDate = weekdayString + ", " + day + ". " + monthString + year;
+        formatedDate = weekdayString + ", " + day + ". " + monthString + " " + year;
 
         return formatedDate;
 
@@ -216,31 +219,31 @@ public class MyDate {
 
         switch (weekdayNumber) {
 
-            case 0:
+            case 1:
                 weekday = Weekday.MONDAY;
                 break;
 
-            case 1:
+            case 2:
                 weekday = Weekday.TUESDAY;
                 break;
 
-            case 2:
+            case 3:
                 weekday = Weekday.WEDNESDAY;
                 break;
 
-            case 3:
+            case 4:
                 weekday = Weekday.THURSDAY;
                 break;
 
-            case 4:
+            case 5:
                 weekday = Weekday.FRIDAY;
                 break;
 
-            case 5:
+            case 6:
                 weekday = Weekday.SATURDAY;
                 break;
 
-            case 6:
+            case 7:
                 weekday = Weekday.SUNDAY;
                 break;
 
@@ -261,11 +264,11 @@ public class MyDate {
 
         boolean isYounger = false;
 
-        if (other.year > year) {
+        if (other.year < year) {
             isYounger = true;
-        } else if (other.year == year && other.month > month) {
-            isYounger = false;
-        } else if (other.year == year && other.month == month && other.day > day) {
+        } else if (other.year == year && other.month < month) {
+            isYounger = true;
+        } else if (other.year == year && other.month == month && other.day < day) {
             isYounger = true;
         }
 
