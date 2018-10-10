@@ -91,4 +91,5 @@ class MyDateTest {
         MyDate date = new MyDate("29.9.2018");
         assertThat(date.formatDate(), is("Samstag, 29. September 2018"));
     }
+
 }

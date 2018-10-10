@@ -1,5 +1,9 @@
 package at.htl.mydate;
 
+import static processing.core.PApplet.day;
+import static processing.core.PApplet.month;
+import static processing.core.PApplet.year;
+
 /**
  * Informationen zu Enums: http://tutorials.jenkov.com/java/enums.html
  *               zu split: https://stackoverflow.com/a/3481842/9818338
@@ -39,7 +43,10 @@ public class MyDate {
             isValidDate = day >= 1
                     && month >= 1
                     && month <= 12
-                    && year >= 0;
+                    && year >= 0
+                    && year <= year()
+                    && (year == year() && month <= month())
+                    && (year == year() && month == month() && day <= day());
 
             if (isValidDate) {
 
