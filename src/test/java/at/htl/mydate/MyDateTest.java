@@ -10,7 +10,7 @@ class MyDateTest {
 
     @Test
     void smokeTest() {
-        MyDate date = new MyDate(2018, 9, 29);
+        MyDate date = new MyDate("29.9.2018");
         assertThat(date.getWeekday(), is(Weekday.SATURDAY));
     }
 
@@ -52,8 +52,8 @@ class MyDateTest {
 
     @Test
     void isYoungerThanYear() {
-        MyDate younger = new MyDate(2018,1,1);
-        MyDate older = new MyDate(2016,1,1);
+        MyDate younger = new MyDate("2018.1.1");
+        MyDate older = new MyDate("2016.1.1");
 
         assertThat("Die Bestimmung des Jahres ist falsch, wenn das andere Datum älter ist",younger.isYoungerThan(older),is(true));
         assertThat("Die Bestimmung des Jahres ist falsch, wenn das andere Datum jünger ist",older.isYoungerThan(younger),is(false));
@@ -61,8 +61,8 @@ class MyDateTest {
 
     @Test
     void isYoungerThanMonth() {
-        MyDate younger = new MyDate(2018,7,1);
-        MyDate older = new MyDate(2018,2,1);
+        MyDate younger = new MyDate("2018.7.1");
+        MyDate older = new MyDate("2018.2.1");
 
         assertThat("Die Bestimmung des Monats ist falsch, wenn das andere Datum älter ist",younger.isYoungerThan(older),is(true));
         assertThat("Die Bestimmung des Monats ist falsch, wenn das andere Datum jünger ist",older.isYoungerThan(younger),is(false));
@@ -70,8 +70,8 @@ class MyDateTest {
 
     @Test
     void isYoungerThanDay() {
-        MyDate younger = new MyDate(2018,7,11);
-        MyDate older = new MyDate(2018,7,1);
+        MyDate younger = new MyDate("2018.7.11");
+        MyDate older = new MyDate("2018.7.1");
 
         assertThat("Die Bestimmung des Tages ist falsch, wenn das andere Datum älter ist",younger.isYoungerThan(older),is(true));
         assertThat("Die Bestimmung des Tages ist falsch, wenn das andere Datum jünger ist",older.isYoungerThan(younger),is(false));
@@ -79,8 +79,8 @@ class MyDateTest {
 
     @Test
     void isYoungerThanDayEqual() {
-        MyDate first = new MyDate(2018,7,11);
-        MyDate second = new MyDate(2018,7,11);
+        MyDate first = new MyDate("2018.7.11");
+        MyDate second = new MyDate("2018.7.11");
 
         assertThat("Die Bestimmung des Tages ist falsch, wenn das andere Datum gleich ist",first.isYoungerThan(second),is(false));
         assertThat("Die Bestimmung des Tages ist falsch, wenn das andere Datum gleich ist",second.isYoungerThan(first),is(false));
@@ -88,7 +88,7 @@ class MyDateTest {
 
     @Test
     void formatDate() {
-        MyDate date = new MyDate(2018, 9, 29);
+        MyDate date = new MyDate("2018.9.29");
         assertThat(date.formatDate(), is("Samstag, 29. September 2018"));
     }
 }
