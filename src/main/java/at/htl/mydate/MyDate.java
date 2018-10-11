@@ -55,7 +55,7 @@ public class MyDate {
                     isValidDate = false;
                 } else if (month == 1 && day > 31) {
                     isValidDate = false;
-                } else if ((month == 2 && day > 28 && !isLeapYear()) || (month == 2 && day > 29)) {
+                } else if (month == 2 && day > 28) {
                     isValidDate = false;
                 } else if (month == 3 && day > 31) {
                     isValidDate = false;
@@ -79,6 +79,10 @@ public class MyDate {
                     isValidDate = false;
                 }
 
+                if (isLeapYear(year) && month == 2 && day == 29) {
+                    isValidDate = true;
+                }
+
             }
 
         } else {
@@ -89,15 +93,15 @@ public class MyDate {
 
     }
 
-    private boolean isLeapYear() {
+    private boolean isLeapYear(int year) {
 
         boolean isLeapYear = false;
 
-        if (getYear() % 4 == 0 && getYear() % 100 != 0) {
+        if (year % 4 == 0 && year % 100 != 0) {
             isLeapYear = true;
-        } else if (getYear() % 100 == 0 && getYear() % 400 != 0) {
+        } else if (year % 100d == 0 && year % 400d != 0) {
             isLeapYear = true;
-        } else if (getYear() % 400 == 0) {
+        } else if (year % 400d == 0) {
             isLeapYear = true;
         }
 

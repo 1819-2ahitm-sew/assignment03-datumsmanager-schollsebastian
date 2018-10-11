@@ -112,11 +112,12 @@
     <session id="769031169">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -133,13 +134,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1115" />
+          <entry key="java" value="1310" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1115" />
+          <entry key="JAVA" value="1310" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -147,17 +148,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/mydate/MyDate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="53" column="79" lean-forward="true" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
+            <state relative-caret-position="393">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#isLeapYear#0;class#MyDate#0" />
                 <element signature="method#calulateMonthString#0;class#MyDate#0" />
                 <element signature="method#isYoungerThan#0;class#MyDate#0" />
                 <element signature="n#!!doc;n#getDay#0;n#MyDate#0" />
+                <element signature="e#7606#7607#0" expanded="true" />
+                <element signature="e#7632#7633#0" expanded="true" />
+                <element signature="e#7661#7662#0" expanded="true" />
+                <element signature="e#7689#7690#0" expanded="true" />
+                <element signature="e#7717#7718#0" expanded="true" />
+                <element signature="e#7744#7745#0" expanded="true" />
+                <element signature="e#7779#7780#0" expanded="true" />
+                <element signature="e#7809#7810#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,7 +174,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="782">
               <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
             </state>
           </provider>
@@ -175,7 +183,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/at/htl/mydate/MyDateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
+            <state relative-caret-position="1513">
               <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -193,11 +201,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/mydate/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -238,8 +246,8 @@
         <option value="$PROJECT_DIR$/src/main/java/at/htl/mydate/Weekday.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/at/htl/mydate/MyDateTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/htl/mydate/MyDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/at/htl/mydate/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/htl/mydate/MyDate.java" />
       </list>
     </option>
   </component>
@@ -268,6 +276,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,15 +336,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539269274834" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539280381319" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -475,6 +483,8 @@
       <workItem from="1539187123057" duration="3783000" />
       <workItem from="1539190956863" duration="1581000" />
       <workItem from="1539267005706" duration="2333000" />
+      <workItem from="1539269787675" duration="9000" />
+      <workItem from="1539279200074" duration="1002000" />
     </task>
     <servers />
   </component>
@@ -511,12 +521,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13944000" />
+    <option name="totallyTimeSpent" value="14955000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14712153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -526,10 +545,10 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31203407" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39829606" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39829606" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290735" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarQube" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
@@ -553,55 +572,67 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/at/htl/mydate/Main.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="2017%400" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>day &gt;= 1                     &amp;&amp; month &gt;= 1                     &amp;&amp; month &lt;= 12                     &amp;&amp; year &gt;= 0                     &amp;&amp; year &lt;= year()                     &amp;&amp; (year == year() &amp;&amp; month &lt;= month())                     &amp;&amp; (year == year() &amp;&amp; month == month() &amp;&amp; day &lt;= day())</expression-string>
+        <expression-string>getYear()%4</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1                     &amp;&amp; month &gt;= 1                     &amp;&amp; month &lt;= 12                     &amp;&amp; year &gt;= 0                     &amp;&amp; year &lt;= year()                     &amp;&amp; (year == year() &amp;&amp; month &lt;= month())                     &amp;&amp; (year == year() &amp;&amp; month == month() || day &lt;= day())</expression-string>
+        <expression-string>getYear()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1                     &amp;&amp; month &gt;= 1                     &amp;&amp; month &lt;= 12                     &amp;&amp; year &gt;= 0                     &amp;&amp; (year &lt;= year()                     || (year == year() &amp;&amp; month &lt;= month())                     || (year == year() &amp;&amp; month == month() || day &lt;= day()))</expression-string>
+        <expression-string>getYear()%100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1 &amp;&amp; month &gt;= 1 &amp;&amp; month &lt;= 12 &amp;&amp; year &gt;= 0 &amp;&amp; (year &lt;= year() ||)</expression-string>
+        <expression-string>getYear()%400</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1 &amp;&amp; month &gt;= 1 &amp;&amp; month &lt;= 12 &amp;&amp; year &gt;= 0 &amp;&amp; (year &lt;= year())</expression-string>
+        <expression-string>2017%400</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1 &amp;&amp; month &gt;= 1 &amp;&amp; month &lt;= 12 &amp;&amp; year &gt;= 0 &amp;&amp; (year &lt;= year() || year == year() &amp;&amp; month &lt;= month())</expression-string>
+        <expression-string>2017%100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1 &amp;&amp; month &gt;= 1 &amp;&amp; month &lt;= 12 &amp;&amp; year &gt;= 0 &amp;&amp; (year &lt;= year() || year == year() &amp;&amp; month == month())</expression-string>
+        <expression-string>2017d%100d</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1 &amp;&amp; month &gt;= 1 &amp;&amp; month &lt;= 12 &amp;&amp; year &gt;= 0 &amp;&amp; year &lt;= year();</expression-string>
+        <expression-string>2017d%4d</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>day &gt;= 1 &amp;&amp; month &gt;= 1 &amp;&amp; month &lt;= 12 &amp;&amp; year &gt;= 0 &amp;&amp; (year &lt;= year() || year == year() &amp;&amp; month &lt;= month() || year == year() &amp;&amp; month == month() || day &lt;= day())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>day &gt;= 1                     &amp;&amp; month &gt;= 1                     &amp;&amp; month &lt;= 12                     &amp;&amp; year &gt;= 0                     &amp;&amp; (year &lt;= year()                     || year == year() &amp;&amp; month &lt;= month()                     || year == year() &amp;&amp; month == month() || day &lt;= day())</expression-string>
+        <expression-string>2017%100d</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -616,17 +647,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/at/htl/mydate/MyDateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
+        <state relative-caret-position="1513">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -641,31 +671,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/mydate/MyDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="53" column="79" lean-forward="true" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isLeapYear#0;class#MyDate#0" />
-            <element signature="method#calulateMonthString#0;class#MyDate#0" />
-            <element signature="method#isYoungerThan#0;class#MyDate#0" />
-            <element signature="n#!!doc;n#getDay#0;n#MyDate#0" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/mydate/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/htl/mydate/MyDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#calulateMonthString#0;class#MyDate#0" />
+            <element signature="method#isYoungerThan#0;class#MyDate#0" />
+            <element signature="n#!!doc;n#getDay#0;n#MyDate#0" />
+            <element signature="e#7606#7607#0" expanded="true" />
+            <element signature="e#7632#7633#0" expanded="true" />
+            <element signature="e#7661#7662#0" expanded="true" />
+            <element signature="e#7689#7690#0" expanded="true" />
+            <element signature="e#7717#7718#0" expanded="true" />
+            <element signature="e#7744#7745#0" expanded="true" />
+            <element signature="e#7779#7780#0" expanded="true" />
+            <element signature="e#7809#7810#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

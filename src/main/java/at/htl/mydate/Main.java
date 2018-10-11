@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.printf("Date-Manager%n============%n%n");
-        int counter = 2;
+        int counter = 1;
         String dateString;
         MyDate currentDate;
         MyDate youngestDate = new MyDate("1.1.0");
@@ -21,7 +21,7 @@ public class Main {
 
             currentDate = new MyDate(dateString);
 
-            if (currentDate.getYear() != 0) {
+            if (currentDate.getMonth() != 0) {
 
                 if (currentDate.isYoungerThan(youngestDate)) {
                     youngestDate = currentDate;
@@ -41,4 +41,5 @@ public class Main {
         }
 
     }
+
 }
