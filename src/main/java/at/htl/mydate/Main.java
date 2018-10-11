@@ -21,16 +21,22 @@ public class Main {
 
             currentDate = new MyDate(dateString);
 
-            if (currentDate.isYoungerThan(youngestDate)) {
-                youngestDate = currentDate;
-            }
+            if (currentDate.getYear() != 0) {
 
-            System.out.println("Jüngstes Datum: " + youngestDate.formatDate());
+                if (currentDate.isYoungerThan(youngestDate)) {
+                    youngestDate = currentDate;
+                }
+
+                System.out.println("Jüngstes Datum: " + youngestDate.formatDate());
+
+                counter++;
+
+            } else {
+                System.out.println("Falsche Eingabe");
+            }
 
             System.out.print(counter + ". Datum: ");
             dateString = scanner.next();
-
-            counter++;
 
         }
 

@@ -43,14 +43,17 @@ public class MyDate {
             isValidDate = day >= 1
                     && month >= 1
                     && month <= 12
-                    && year >= 0
-                    && year <= year()
-                    && (year == year() && month <= month())
-                    && (year == year() && month == month() && day <= day());
+                    && year >= 0;
 
             if (isValidDate) {
 
-                if (month == 1 && day > 31) {
+                if (year > year()) {
+                    isValidDate = false;
+                } else if (year == year() && month > month()) {
+                    isValidDate = false;
+                } else if (year == year() && month == month() && day > day()) {
+                    isValidDate = false;
+                } else if (month == 1 && day > 31) {
                     isValidDate = false;
                 } else if ((month == 2 && day > 28 && !isLeapYear()) || (month == 2 && day > 29)) {
                     isValidDate = false;
