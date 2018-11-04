@@ -2,6 +2,7 @@ package at.htl.mydate;
 
 import java.util.Scanner;
 
+// 2018-11-04-HM: Funktioniert => super!
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);

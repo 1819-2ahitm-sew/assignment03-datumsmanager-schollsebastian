@@ -6,6 +6,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 
+// 2018-11-04-HM: alle Tests erfolgreich => super!
+// Anpassung der Tests in Ordnung - entsprachen tlw. nicht der Aufgabenstellung
 class MyDateTest {
 
     @Test

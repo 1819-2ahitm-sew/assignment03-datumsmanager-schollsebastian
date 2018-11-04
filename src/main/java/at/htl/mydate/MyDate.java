@@ -34,6 +34,10 @@ public class MyDate {
 
         boolean isValidDate;
 
+        /*
+        2018-11-04-HM: mit einer Array-Variable, müsste split nur 1x aufgerufen werden
+        String[] dateElements = dateString.split("\\.");
+         */
         if (dateString.split("\\.").length == 3) {
 
             int day = Integer.valueOf(dateString.split("\\.")[0]);
@@ -43,7 +47,7 @@ public class MyDate {
             isValidDate = day >= 1
                     && month >= 1
                     && month <= 12
-                    && year >= 0;
+                    && year >= 0; // 2018-11-04-HM: Das Kalenderjahr 0 existiert nicht
 
             if (isValidDate) {
 
@@ -53,7 +57,7 @@ public class MyDate {
                     isValidDate = false;
                 } else if (year == year() && month == month() && day > day()) {
                     isValidDate = false;
-                } else if (month == 1 && day > 31) {
+                } else if (month == 1 && day > 31) { // 2018-11-04-HM: ev. switch-Anweisung verwenden
                     isValidDate = false;
                 } else if (month == 2 && day > 28) {
                     isValidDate = false;
@@ -79,6 +83,7 @@ public class MyDate {
                     isValidDate = false;
                 }
 
+                // 2018-11-04-HM: auch Schaltjahre berücksichtigt => super!
                 if (isLeapYear(year) && month == 2 && day == 29) {
                     isValidDate = true;
                 }
@@ -100,7 +105,7 @@ public class MyDate {
         if (year % 4 == 0 && year % 100 != 0) {
             isLeapYear = true;
         } else if (year % 100d == 0 && year % 400d != 0) {
-            isLeapYear = true;
+            isLeapYear = true; // 2018-11-04-HM: richtig wäre isLeapYear = false
         } else if (year % 400d == 0) {
             isLeapYear = true;
         }
